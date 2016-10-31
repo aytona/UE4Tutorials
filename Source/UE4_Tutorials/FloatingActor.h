@@ -20,6 +20,9 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
-    float RunningTime;
-	
+    float m_RunningTimeZ;
+    float m_RunningTimeY;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=QuickStart)
+    float m_FloatScale;
 };
